@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("ZenTokyoZoo-Regular.ttf");
+}
+
+.rainbow {
+    height: 200px;
+    background: linear-gradient(0deg, red, orange, yellow, green, blue );
+    position: relative;
+}
+
+.rainbow a {
+    position: absolute;
+    bottom: 0px;
+
+}
+
+p {
+    font-size: 30px;
+    color: grey;
+}
+
+h1 {
+    font-family: "Open Sans";
+    text-decoration: underline;
+    color: green;
+    text-shadow: 3px 3px #ffa500;
+    letter-spacing: 30px;
+}
+
