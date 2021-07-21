@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.button { 
+    background-color: teal;
+    font-size: 16px;
+    border-radius: 3px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin:100px;
+    transition: transform 3s cubic-bezier(0.77, 0, 0.175, 1);
+    will-change: transform;
+    transition: transform 2s linear;
+}
+
+.button:hover {
+    transform: translateY(30px);
+    font-size: 30px;
+    background-color: orange;
+    border-radius: 100px;
+    transform: rotate(180deg);  
+    transform-origin: 0px 360px;  
+}
+
+.clock {
+    background: #ccc;
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    margin-left: 100px;
+    position: relative;
+
+}
+
+.smaller {
+    width: 5px;
+    background-color: purple;
+    height: 20%;
+    transition: transform 2s linear;
+    margin: 0px auto;
+    padding-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: clocksmaller;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.small {
+    width: 5px;
+    background-color: orange;
+    height:30%;
+    transition: transform 2s linear;
+    margin: 0px auto;
+    padding-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: clocksmall;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+.large  {
+    width: 5px;
+    background-color: black;
+    height: 50%;
+    transition: transform 2s ease;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: clocklarge;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+}
+
+.clock:hover .smaller {
+    transform: rotate(-360deg);  
+    transform-origin: 0px 0px;  
+}
+
+.clock:hover .small {
+    transform: rotate(360deg);  
+    transform-origin: 0px 0px;  
+}
+
+.clock:hover .large {
+    transform: rotate(-360deg);  
+    transform-origin: 0px 0px;  
+}
+
+@keyframes clocksmaller {
+    from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes clocksmall {
+    from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes clocklarge {
+    from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+</style>
+<body>
+
+    <div>
+        <button class="button">button</button>
+    </div>
+
+    <div class="clock">
+        <div class="smaller"></div>
+        <div class="small"></div>
+        <div class="large"></div>
+    </div>
+
+
+
+</body>
+</html>

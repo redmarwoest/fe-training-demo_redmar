@@ -5,7 +5,7 @@
 
 .rainbow {
     height: 150px;
-    background: linear-gradient(0deg, red, orange, yellow, green, blue );
+    background: linear-gradient(180deg, red, orange, yellow, green, blue );
     position: relative;
 }
 
@@ -39,7 +39,7 @@ h1 {
 
 }
 
-.bullseye-img {
+
 
 }
 
@@ -48,3 +48,22 @@ h1 {
     bottom: 0px;
 
 }
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background: turquoise;
+    box-shadow: 10px 5px 4px #ffa500, -3px -3px 4px #ffa500;;
+    border-style: solid dashed double dotted;
+    border-color: red;
+    border-width: 5px;
+    
+
+
+}
+
+.box h5 {
+    padding: 0px 10px 10px;
+}
+
